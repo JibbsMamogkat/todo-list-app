@@ -1,0 +1,13 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "A Basic Todo List App Written with NodeJs and Express",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "jameel mamogkat",
+  "license": "ISC",
+  "type": "module"
+}
