@@ -31,4 +31,13 @@ router.get('/users/:id', async (req, res) => {
     return res.status(404).json({error: errorMessage});
 });    
 
+router.get('/users', async (req, res) => {
+    try {
+        const users = await User.find();
+        return res.json(users);
+    } catch (error) {
+        return res.status(500).json({ error: 'Failed to fetch users' });
+    }
+});
+
 export default router;
