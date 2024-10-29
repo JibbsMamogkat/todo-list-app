@@ -1,9 +1,9 @@
 import { Schema, model } from "mongoose";
 
 const todoSchema = new Schema({
-    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true }, // Changed user to userId
+    userId: { type: Schema.Types.ObjectId, ref: 'User', required: true }, 
     title: { type: String, required: true },
-    description: { type: String } // Keep this as optional or set required: true if needed
+    description: { type: String } 
 });
 
 const Todo = model('Todo', todoSchema);

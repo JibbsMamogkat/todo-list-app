@@ -30,7 +30,7 @@ router.get('/users/:id', async (req, res) => {
 
     return res.status(404).json({error: errorMessage});
 });    
-
+// get all users for checking
 router.get('/users', async (req, res) => {
     try {
         const users = await User.find();
